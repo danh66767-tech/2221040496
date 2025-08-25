@@ -1,0 +1,33 @@
+h3 {
+    color: green;
+}
+
+/*id là dấu # + tên được đặt*/
+#title {
+    background-color: violet;
+    color: yellow;
+}
+
+/*class là dấu . + tên được đặt*/
+.nen {
+    background-color: blue;
+}
+
+.box1 {
+    color: aquamarine;
+    background-color: blueviolet;
+}
+
+.box2 {
+    color: green;
+    background-color: black;
+    /* 2 giá trị :giá trị 1 (trên dưới), giá trị 2(trái phải) */
+    /* margin: 100px 50px; */
+    /* căn khối giữa */
+    margin: auto;
+}
+
+.box3 {
+    color: blue;
+    background-color: coral;
+}
