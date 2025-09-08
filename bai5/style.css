@@ -33,29 +33,43 @@ ul {
     color: grey;
 }
 
-.logo {
-    height: 100px;
-    background-color: grey;
-}
-
 main {
     display: flex;
+    gap: 10px;
 }
 
 .noidung-trai {
+
     /* height: 1000px;
     background-color: aquamarine; */
-    width: 80%;
+    width: 85%;
     border-radius: 10px;
 }
 
-.noidung-phai {
-    height: 1000px;
-    background-color: red;
+.duoi {
+    display: flex;
+    width: 100%;
+}
+
+.duoi1 {
+    padding: 10px 10px 10px 10px;
     width: 20%;
 }
 
+.duoi2 {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.noidung-phai {
+    /* height: 1000px;
+    background-color: red; */
+    width: 15%;
+}
+
 .tieude {
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
     background-color: #2fa4e7;
     color: white;
     text-decoration: none;
@@ -67,14 +81,107 @@ main {
 .tintuc-danhsach {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 
 }
 
 .baiviet {
-    height: 200px;
-    width: 32%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow: hidden;
 }
 
-.anh {
-    width: 30%;
+.tk {
+    padding: 20px 20px 5px 20px;
+
+}
+
+.td {
+    padding: 10px 10px 10px 10px;
+    margin-top: 22px;
+    background-color: #2fa4e7;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mk {
+    text-align: right;
+    font-size: 16px;
+    color: #157ab5;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.mk:hover {
+    color: aqua;
+}
+
+.dangnhap {
+    margin-top: 5px;
+    width: 180px;
+}
+
+.login {
+    width: 180px;
+    background-color: #2FA4E7;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.MR {
+    width: 180px;
+    background-color: #0078D4;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+button.MR {
+    margin-top: 5px;
+}
+
+.time {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.arrow {
+    color: #1e90ff;
+    margin-right: 5px;
+}
+
+.date {
+    color: #777;
+    text-align: right;
+}
+
+tr:hover {
+    background-color: #f1f9ff;
+
+}
+
+.phai1 {
+    padding-left: 20px;
 }
