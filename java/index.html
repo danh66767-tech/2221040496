@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Javascript</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script>
+        // document.writeln("Hello Word! <br>");
+
+        // để khai báo biến js dùng let hoặc var
+        // Cú pháp: let Tên biến = Giá trị
+        // để nối chuỗi dùng 
+
+        let hoTen = "Nguyen Nhu Thanh Danh <br>";
+
+        document.writeln(hoTen);
+
+        // let soThunhat = 10;
+        // let soThuhai = 5;
+        // let ketQua = 0;
+
+
+        // ketQua = soThunhat * soThuhai;
+
+        // soThunhat = soThunhat +soThuhai
+        // soThunhat += soThuhai;
+
+        let soThunhat = 10;
+        let soThuhai = 5;
+        let ketQua = true;
+        // == != === !== > < >= <=
+        // ! là phủ định
+
+
+        let thongTin = {
+            hoTen: "Nguyen Nhu Thanh Danh",
+            msv: "2221050496",
+            lop: "CNPM",
+            tuoi: 21,
+            gioiTinh: true
+
+        }
+
+        let diaChiNha = {
+            thanhPho: "Hòa Bình",
+            phuong: "Trung Minh"
+        }
+        thongTin.diaChi = diaChiNha;
+
+        // document.writeln("Xin chào:" + thongTin.hoTen + " " + thongTin.tuoi + "tuổi" + " Nhà ở " + thongTin.diaChi.thanhPho);
+
+        let namNay = 2025;
+
+        document.writeln("Năm sinh" + (namNay - thongTin.tuoi));
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
