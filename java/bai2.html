@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+
+<body>
+    <script>
+        // let toDay = new Date();
+        // document.writeln(toDay + '<br>');
+
+
+        // let yesterday = new Date('2025-9-28');
+        // document.writeln(yesterday)
+
+
+        //Mảng
+        let arr = [1, 2, 3, 4, 5, 'a', 'b', 'c', 5, 6];
+
+        //document.writeln(arr.length)
+        // document.writeln(arr[3]); // Cách đọc phần tử trong mảng
+        document.writeln(arr.indexOf('a') + '<br>')// Tìm trong mảng có phần tử đấy k , nếu k có thì sẽ trả về là -1
+        document.writeln(arr.lastIndexOf(5) + '<br>');//Tìm ra vị trí xuất hiện cuối cùng trong mảng
+        document.writeln(Array.isArray(arr) + '<br>');//Kiểm tra xem biến arr có phải mảng k
+
+
+        //concat dùng để nối chuỗi
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "Javascript";
+        c = [42, "VBscript"];
+        d = a.concat(b, c);
+        d[3] = 4;
+        document.writeln(d + '<br>');
+        document.writeln(d.join("-") + '<br>');// thay thế mảng thành chuỗi string
+        // d.push("Kiên");
+        // .pop() là lấy ra phần tử cuối cùng trong mảng
+        // .push("Kiên") là thêm phần tử vào mảng
+        // .reverse() là đảo ngược phần tử trong mảng
+        // .shift() là xóa phần tử đầu tiên
+        // .unshift(0) là thêm phần tử vào đầu mảng 
+
+        let toDay = new Date();
+        let now = toDay.getHours();
+        if (now < 10) {
+            document.writeln("Chào buổi sáng");
+        } else if (now >= 10 && now < 12) {
+            document.writeln("Chào buổi trưa");
+        } else if (now >= 12 && now < 17) {
+            document.writeln("Chào buổi chiều");
+        } else if (now >= 17 && now < 22) {
+            document.writeln("Chào buổi tối");
+        } else {
+            document.writeln("Chào buổi đêm")
+        }
+        document.writeln("<br>")
+
+
+
+        let so = "1000000000000000000007";
+        let soCuoiCung = parsenInt(so[so.length - 1]);
+        if (soCuoiCung % 2 == 0) {
+            document.writeln("Là số chẵn: ");
+        } else {
+            document.writeln("Là sỗ lẻ: ")
+        }
+    </script>
+</body>
+
+</html>
