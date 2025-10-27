@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .anh {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .anh img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Ví dụ về chế độ</h2>
+        <div class="anh">
+            <img src="https://png.pngtree.com/png-vector/20240925/ourmid/pngtree-cartoon-cute-little-sun-png-image_13901203.png"
+                alt="">
+        </div>
+        <h2>Chế độ : Sáng</h2>
+        <div>
+            <button onclick="doiCheDo()">Đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        let cheDo = true;
+        function doiCheDo() {
+            if (cheDo == true) {
+                document.getElementsByTagName('body')[0].style = 'background-color:black';
+                document.getElementsByTagName('h2')[1].innerHTML = 'chế độ tối';
+                document.getElementsByTagName('h2')[0].style = 'color: white';
+                document.getElementsByTagName('h2')[1].style = 'color: white';
+                document.getElementsByTagName('img')[0].src = 'https://dienmattroigio.com/wp-content/uploads/2022/11/tai-sao-mat-trang-lai-phat-sang.jpg'
+                cheDo = false;
+            }
+            else {
+                document.getElementsByTagName('body')[0].style = 'background-color:white';
+                document.getElementsByTagName('h2')[1].innerHTML = 'chế độ sáng';
+                document.getElementsByTagName('h2')[0].style = 'color: black';
+                document.getElementsByTagName('h2')[1].style = 'color: black';
+                document.getElementsByTagName('img')[0].src = 'https://png.pngtree.com/png-vector/20240925/ourmid/pngtree-cartoon-cute-little-sun-png-image_13901203.png'
+                cheDo = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
