@@ -1,0 +1,88 @@
+ body {
+   font-family: Arial, sans-serif;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+ }
+
+ h1 {
+   margin-top: 20px;
+   color: black;
+ }
+
+ .container {
+   max-width: 900px;
+   margin: 30px auto;
+   padding: 20px;
+   background-color: azure;
+   border-radius: 14px;
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ .form {
+   flex: 1;
+   text-align: left;
+ }
+
+ .form label {
+   display: block;
+   font-weight: 600;
+   margin-top: 10px;
+ }
+
+ .form input {
+   width: 100%;
+   padding: 10px;
+   border-radius: 8px;
+   border: 1px solid gainsboro;
+   margin-top: 4px;
+ }
+
+ .error {
+   color: red;
+   font-size: 14px;
+   margin: 4px 0 8px 0;
+ }
+
+ button {
+   margin-top: 10px;
+   padding: 10px;
+   width: 240px;
+   border-radius: 8px;
+   border: 1px solid gainsboro;
+   background: white;
+   cursor: pointer;
+   /* thay đổi định dạng con trỏ */
+   font-weight: 600;
+ }
+
+ button:hover {
+   background: olive;
+ }
+
+ .label {
+   margin-top: 20px;
+   font-weight: bold;
+ }
+
+ #ketQua {
+   font-size: 22px;
+   margin-top: 8px;
+   color: black;
+ }
+
+ .image {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #hinhBMI {
+   max-width: 260px;
+   display: none;
+   border-radius: 12px;
+ }
