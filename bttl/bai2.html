@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TÍNH CHỈ SỐ BMI</h1>
+
+    <div class="container">
+        <div class="form">
+            <label>Nhập vào chiều cao:</label>
+            <input type="number" id="chieuCao" step="0.01" placeholder="m">
+            <p id="loiCao" class="error"></p>
+
+            <label>Nhập vào cân nặng:</label>
+            <input type="number" id="canNang" step="0.1" placeholder="kg">
+            <p id="loiNang" class="error"></p>
+
+            <button onclick="tinhBMI()">Kiểm tra</button>
+
+            <p class="label">Chỉ số BMI của bạn là:</p>
+            <p id="ketQua"></p>
+        </div>
+
+        <div class="image">
+            <img id="hinhBMI" alt="Ảnh minh họa BMI">
+        </div>
+    </div>
+
+    <script>
+        function tinhBMI() {
+            let canNang = document.getElementById("canNang").value;
+            let chieuCao = document.getElementById("chieuCao").value;
+            let ketQua = document.getElementById("ketQua");
+            let hinh = document.getElementById("hinhBMI");
+
+            let loiCao = document.getElementById("loiCao");
+            let loiNang = document.getElementById("loiNang");
+
+            loiCao.textContent = "";
+            loiNang.textContent = "";
+
+            let hopLe = true;
+            if (!chieuCao || chieuCao <= 0) {
+                loiCao.textContent = "Chiều cao không hợp lệ!";
+                hopLe = false;
+            }
+            if (!canNang || canNang <= 0) {
+                loiNang.textContent = "Cân nặng không hợp lệ!";
+                hopLe = false;
+            }
+
+            if (!hopLe) {
+                ketQua.textContent = "";
+                hinh.style.display = "none";
+                return;
+            }
+
+            const bmi = canNang / (chieuCao * chieuCao);
+            let anh = "";
+
+            if (bmi < 18.5) {
+                anh = "thieu.png";
+            } else if (bmi < 25) {
+                anh = "binhthuong.png";
+            } else if (bmi < 30) {
+                anh = "thua.png";
+            } else if (bmi < 40) {
+                anh = "beocapdo1.png";
+            } else {
+                anh = "beonang.png";
+            }
+
+            ketQua.textContent = bmi.toFixed(1);
+            hinh.src = anh;
+            hinh.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
